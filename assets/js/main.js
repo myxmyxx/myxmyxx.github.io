@@ -108,6 +108,21 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
     keyboard: true,
   });
 
+/*==================== Project ====================*/
+function checkPass(){
+    var pass = document.getElementById("pass").value,
+        check = document.getElementById("check")
+    check.classList.add('project__visible')
+    if(pass=="7304"){
+        check.classList.add('uil-check-circle')
+        check.classList.remove('uil-times-circle')
+    }
+    else{
+        check.classList.add('uil-times-circle')
+        check.classList.remove('uil-check-circle')
+    }
+}
+
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
     loop: true,

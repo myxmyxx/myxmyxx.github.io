@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 250 ; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 142 ; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -660,7 +660,7 @@ a{
     font-size: var(--small-font-size);
 }
 
-.services__:hover .button__icon{
+.services__button:hover .button__icon{
     transform: translateX(.25rem);
 }
 
@@ -809,6 +809,34 @@ a{
 .project__img{
     width: 232px;
     justify-self: center;
+}
+
+.project__modal-title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+    text-align: center;
+}
+
+.project__input{
+    width: 90%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem ,5rem 0;
+}
+
+.project__modal-icon{
+    color: var(--first-color);
+    margin-right: var(--mb-0-25);
+    visibility: hidden;
+}
+
+.project__visible{
+    visibility: visible;
 }
 
 /*==================== TESTIMONIAL ====================*/
