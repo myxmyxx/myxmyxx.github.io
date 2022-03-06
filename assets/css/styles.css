@@ -839,6 +839,21 @@ a{
     visibility: visible;
 }
 
+.gift{
+
+    visibility: hidden;
+}
+
+.gift_visible{
+    visibility: visible;
+}
+
+
+#video{
+    width: 100%;
+    height: 500px;
+}
+
 /*==================== TESTIMONIAL ====================*/
 .testimonial__data,
 .testimonial__header{

@@ -111,11 +111,13 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
 /*==================== Project ====================*/
 function checkPass(){
     var pass = document.getElementById("pass").value,
-        check = document.getElementById("check")
+        check = document.getElementById("check"),
+        gift = document.getElementById("giftbtn")
     check.classList.add('project__visible')
     if(pass=="7304"){
         check.classList.add('uil-check-circle')
         check.classList.remove('uil-times-circle')
+        gift.classList.add('gift_visible')
     }
     else{
         check.classList.add('uil-times-circle')
